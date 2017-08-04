@@ -9,8 +9,6 @@ final class DummyConfiguratorWrapper
 {
     /** @var callable|null */
     private $previous;
-    /** @var DiTypeFactory */
-    private $types = [];
 
     /**
      * DummyConfiguratorWrapper constructor.
@@ -22,9 +20,8 @@ final class DummyConfiguratorWrapper
         $this->previous = $previous;
     }
 
-    public function addType(DiTypeInterface $type)
+    public function addType()
     {
-        $this->types[] = $type;
     }
 
     public function configure($something)
