@@ -6,3 +6,8 @@ build:
         coverage:
           file: build/clover.xml
           format: php-clover
+
+filter:
+  excluded_paths:
+    - "Test/"               # Everything in a root level "tests" directory
+    - "Tests/"              # Without trailing "/", just ignores a single file name "tests"
