@@ -1,0 +1,16 @@
+parameters:
+  bankiru_doctrine_di_types.init_mode: kernel_boot
+  bankiru_doctrine_di_types.init_service: doctrine
+
+services:
+  bankiru_doctrine_di_types.type_factory:
+    class: Bankiru\Doctrine\DiType\DiTypeFactory
+
+  bankiru_doctrine_di_types.type_configurator:
+    class: Bankiru\Doctrine\DiType\DependencyInjection\DiTypeConfigurator
+
+  bankiru_doctrine_di_types.abstract:
+    class: Bankiru\Doctrine\DiType\AbstractDiType
+    public: false
+    abstract: true
+    configurator: ['@bankiru_doctrine_di_types.type_configurator', 'configure']

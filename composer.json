@@ -1,0 +1,29 @@
+{
+  "name": "bankiru/doctrine-di-types",
+  "description": "DI-capable DBAL types for doctrine",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Batanov",
+      "email": "pavel@batanov.me"
+    }
+  ],
+  "require": {
+    "php": "~5.5 || ~7.0",
+    "doctrine/dbal": "~2.4"
+  },
+  "require-dev": {
+    "doctrine/doctrine-bundle": "~1.5",
+    "symfony/http-kernel": "~2.7 || ~3.0 || ~4.0",
+    "symfony/config": "~2.7 || ~3.0 || ~4.0",
+    "symfony/yaml": "~2.7 || ~3.0 || ~4.0",
+    "symfony/dependency-injection": "~2.7 || ~3.0 || ~4.0",
+    "phpunit/phpunit": "^4.8.35 || ^5.4 || ^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bankiru\\Doctrine\\DiType\\": "./"
+    }
+  }
+}
