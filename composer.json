@@ -25,5 +25,6 @@
     "psr-4": {
       "Bankiru\\Doctrine\\DiType\\": "./"
     }
-  }
+  },
+  "abandoned": true
 }
